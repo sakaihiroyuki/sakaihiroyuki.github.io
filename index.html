@@ -4,15 +4,108 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap Sample</title>
+    <title>HIROYUKU's PORTFOLIO</title>
+    <meta name="description" content="サイトの紹介文を書く。検索でヒットしたタイトル下の説明文に当たる。">
     <!-- BootstrapのCSS読み込み -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/custom.css">
     <!-- jQuery読み込み -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- BootstrapのJS読み込み -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <h1>Hello, world!</h1>
-  </body>
+    <header>
+          <!-- 1.ナビゲーションバーの設定 -->
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <!-- 2.ヘッダ情報 -->
+          <div class="navbar-header">
+            <a class="navbar-brand">My portforio</a>
+          </div>
+          <!-- 3.リストの配置 -->
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">index</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div id="logo">
+        <img src="./img/SakaiHiroyuki.JPG" alt="">
+        <h1>酒井　浩行</h1>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="row">
+        <section>
+          <h2>自己紹介</h2>
+          <div class="col-sm-offset-3 col-sm-9 col-md-offset-4 col-md-8">
+            <p>酒井浩行</p>
+            <p>北陸先端科学技術大学院大学 先端科学技術研究科</p>
+            <p>博士前期課程1年在籍</p>
+            <p>専攻：データマイニング　機械学習</p>
+          </div>
+        </section>
+        
+        <section>
+          <h2>スキル</h2>
+          <div class="col-sm-offset-3 col-sm-9 col-md-offset-4 col-md-8">
+            <table border="1">
+              <thead>
+                <tr>
+                  <th>スキル</th>
+                  <th>年数</th>
+                  <th>経験</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>C</td>
+                  <td>3</td>
+                  <td>ニューラルネットによる文字認識</td>
+                </tr>
+                <tr>
+                  <td>Ruby</td>
+                  <td>1</td>
+                  <td>SVMによるたんぱく質翻訳後修飾部位の予測</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+  
+        <section>
+          <h2>作品</h2>
+          <div class="col-sm-offset-3 col-sm-9 col-md-offset-4 col-md-8">
+            <p>1.aaaaaa</p>
+            <p>2.bbbbbb</p>
+            <p>3.cccccc</p>
+          </div>
+        </section>
+
+        <section>
+          <h2>連絡先</h2>
+          <div class="col-sm-offset-3 col-sm-9 col-md-offset-4 col-md-8">
+            <p>Gmail:sakaihiroyuki18#gmail.com　(#を@に変更してください)</p>
+          </div>
+        </section>
+      
+        <section>
+          <h2>リンク</h2>
+          <div class="col-sm-offset-3 col-sm-9 col-md-offset-4 col-md-8">
+            <ul>
+                <li><a href="https://www.facebook.com/profile.php?id=100011990251863" target="_blank">facebook</a></li>
+                <li><a href="https://github.com/sakaihiroyuki" target="_blank">Github</a></li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+
+      <footer>
+        <p>&copy; 2016 Hiroyuki Sakai.</p>
+      </footer>
+    </body>
 </html>
